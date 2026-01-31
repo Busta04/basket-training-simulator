@@ -1,39 +1,25 @@
 public class Team {
-    private String nome;
-    private String[] giocatori; // 5 giocatori
-    private int punteggioClassifica;
-    private String strategia;
+    private String name;
+    private String[] players; // 5 players
+    private int rankingPoints;
+    private String strategy;
 
-    public Team(String nome, String[] giocatori) {
-        this.nome = nome;
-        this.giocatori = giocatori;
-        this.punteggioClassifica = 0;
-        this.strategia = "";
-    }
-
-    // getter e setter
-    public String getNome() { 
-        return nome; 
+    public Team(String name, String[] players) {
+        this.name = name;
+        this.players = players;
+        this.rankingPoints = 0;
+        this.strategy = "";
     }
 
-    public int getPunteggioClassifica() { 
-        return punteggioClassifica; 
-    }
+    // Getters and setters
+    public String getName() { return name; }
+    public String[] getPlayers() { return players; }
 
-    public void aggiungiPunti(int punti) { 
-        punteggioClassifica += punti; 
-    }
+    public int getRankingPoints() { return rankingPoints; }
+    public void addRankingPoints(int points) { rankingPoints += points; }
 
-    public String[] getGiocatori() { 
-        return giocatori; 
-    }
-    
-    public void setStrategia(String strategia) { 
-        this.strategia = strategia; 
-    }
-
-    public String getStrategia() { 
-        return strategia; 
-    }
+    public String getStrategy() { return strategy; }
+    public void setStrategy(String strategy) { this.strategy = strategy; }
 }
+
 
