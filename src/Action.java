@@ -1,17 +1,17 @@
 public class Action {
-    private String name;
-    private String position; 
+    private String description;
 
-    Action(String name, String position){
-        this.name=name;
-        this.position=position;
+    public Action(String description) {
+        this.description = description;
     }
 
-    public String getName(){
-        return name;
+    public String getDescription() {
+        return description;
     }
 
-    public String getPosition(){
-        return position;
+    @Override
+    public String toString() {
+        return description;
     }
 }
+
