@@ -1,17 +1,19 @@
 public class Action {
-    private String description;
+    private String name;
+    private int points;
 
-    public Action(String description) {
-        this.description = description;
+    public Action(String name, int points) {
+        this.name = name;
+        this.points = points;
     }
 
-    public String getDescription() {
-        return description;
-    }
+    public String getName() { return name; }
+    public int getPoints() { return points; }
 
     @Override
     public String toString() {
-        return description;
+        return name + " (" + points + " pts)";
     }
 }
+
 

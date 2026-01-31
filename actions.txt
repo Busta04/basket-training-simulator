@@ -1,0 +1,4 @@
+Free Throw,1
+Layup,2
+Mid Range Jumpshot,2
+Three Pointer,3
